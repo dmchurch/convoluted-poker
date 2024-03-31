@@ -1,0 +1,38 @@
+#wilds {
+    display: inline-flex;
+    display: inline flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hands {
+    display: grid;
+    grid-template-columns: [fullrow-start] repeat(7, max-content) [fullrow-end];
+}
+dl > div {
+    display: contents;
+}
+dt {
+    font-weight: bold;
+    display: grid;
+    grid-column: fullrow;
+    grid-template-columns: subgrid;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: right;
+}
+dt > span {
+    margin-right: 0.25em;
+}
+dd {
+    grid-column: fullrow;
+    margin-bottom: 0.5em;
+}
+#data {
+    width: 50em;
+    height: 10lh;
+}

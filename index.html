@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Convoluted Poker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='out/index.js' type="module"></script>
+</head>
+<body>
+    <h1>Convoluted Poker scoring tracker</h1>
+    <div>
+        Wilds:
+        <ul id="wilds"></ul>
+    </div>
+    <div>
+        Hand size:
+        <input type="number" min="5" max="20" id="handSize" value="6">
+    </div>
+    <div>
+        Cards in hand: <input id="handSpec" class="handEntry" placeholder="10H JH QH KH AH"> <span class="helperButtons"></span>
+    </div>
+    <div>
+        <!-- <button id="checkHand">Check hand against list</button> -->
+        <button id="addHand">Add hand to list</button>
+    </div>
+    <div>
+        <output id="output"></output>
+    </div>
+    <h2>Scoring hands:</h2>
+    <dl id="hands">
+    </dl>
+    <h2>Sample hands:</h2>
+    <ul id="sampleHands">
+    </ul>
+    <h2>Data (save this!)</h2>
+    <textarea id="data"></textarea>
+</body>
+</html>
